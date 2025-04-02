@@ -1,15 +1,15 @@
 <div class="container">
     <h3>Cadastro de Carros</h3>
     <form #formCar="ngForm" >
-        <div class="d-flex flex-row">
+        <div class="d-flex flex-row align-items-center">
             <label for="name" class="col form-label">Nome</label>
             <input type="text" class="form-control" name="name" id="name" [(ngModel)]="car.name" required>
         </div>
-        <div class="d-flex flex-row">
+        <div class="d-flex flex-row align-items-center">
             <label for="manufacturer" class="col form-label">Montadora</label>
             <input type="text" class="form-control" name="manufacturer" id="manufacturer" [(ngModel)]="car.manufacturer" required>
         </div>
-        <div class="d-flex flex-row">
+        <div class="d-flex flex-row align-items-center">
             <label for="price" class="col form-label">Preço</label>
             <input type="text" class="form-control" name="price" id="price" [(ngModel)]="car.price" required>
 

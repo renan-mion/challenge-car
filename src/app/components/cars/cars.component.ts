@@ -30,4 +30,12 @@ export class CarsComponent {
     this.car = selectedCar;
     this.isUpdate = true;
   }
+
+  removeCar(selectedCar: Car) {
+    this.cars = this.cars.filter(c => c !== selectedCar);
+
+    for(var cont = 0; cont < this.cars.length; cont++) {
+      this.cars[cont].id = cont + 1;
+    }
+  }
 }
