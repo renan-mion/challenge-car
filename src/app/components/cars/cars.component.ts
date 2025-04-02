@@ -14,10 +14,20 @@ export class CarsComponent {
 
   cars: Car[] = [];
 
+  isUpdate: boolean = false;
+
   saveCar() {
-    this.car.id = this.cars.length + 1;
-    console.log(this.car);
-    this.cars.push(this.car)
+    if (!this.isUpdate) {
+      this.car.id = this.cars.length + 1;
+      this.cars.push(this.car)
+    }
+
     this.car = {} as Car;
+    this.isUpdate = false;
+  }
+
+  updateCar(selectedCar: Car) {
+    this.car = selectedCar;
+    this.isUpdate = true;
   }
 }
