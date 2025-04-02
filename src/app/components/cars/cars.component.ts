@@ -13,4 +13,11 @@ export class CarsComponent {
   car: Car = {} as Car;
 
   cars: Car[] = [];
+
+  saveCar() {
+    this.car.id = this.cars.length + 1;
+    console.log(this.car);
+    this.cars.push(this.car)
+    this.car = {} as Car;
+  }
 }
