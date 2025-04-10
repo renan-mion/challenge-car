@@ -37,5 +37,7 @@ export class CarsComponent {
     for(var cont = 0; cont < this.cars.length; cont++) {
       this.cars[cont].id = cont + 1;
     }
+
+    this.car = {} as Car;
   }
 }

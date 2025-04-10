@@ -1,23 +1,23 @@
 <div class="container">
-    <h3>Cadastro de Carros</h3>
+    <h3 class="mb-4">Cadastro de Carros</h3>
     <form #formCar="ngForm" >
-        <div class="d-flex flex-row align-items-center">
-            <label for="name" class="col form-label">Nome</label>
+        <div class="d-flex flex-row align-items-center mb-4">
+            <label for="name" class="col form-label me-3">Nome</label>
             <input type="text" class="form-control" name="name" id="name" [(ngModel)]="car.name" required>
         </div>
-        <div class="d-flex flex-row align-items-center">
-            <label for="manufacturer" class="col form-label">Montadora</label>
+        <div class="d-flex flex-row align-items-center mb-4">
+            <label for="manufacturer" class="col form-label me-3">Montadora</label>
             <input type="text" class="form-control" name="manufacturer" id="manufacturer" [(ngModel)]="car.manufacturer" required>
         </div>
-        <div class="d-flex flex-row align-items-center">
-            <label for="price" class="col form-label">Preço</label>
-            <input type="text" class="form-control" name="price" id="price" [(ngModel)]="car.price" required>
+        <div class="d-flex flex-row align-items-center mb-4">
+            <label for="price" class="col form-label me-3">Preço</label>
+            <input type="text" class="form-control me-3" name="price" id="price" [(ngModel)]="car.price" required>
 
-            <label for="year" class="col form-label">Ano</label>
+            <label for="year" class="col form-label me-3">Ano</label>
             <input type="text" class="form-control" name="year" id="year" [(ngModel)]="car.year" required>
         </div>
 
-        <button class="btn btn-primary" (click)="save()" [disabled]="formCar.invalid">Salvar</button>
+        <button class="btn btn-primary mb-4" (click)="save()" [disabled]="formCar.invalid">Salvar</button>
     </form>
 </div>
 

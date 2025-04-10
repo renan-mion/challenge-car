@@ -14,7 +14,7 @@
         </thead>
 
         <tbody>
-            <tr *ngFor="let car of cars">
+            <tr class="align-middle" *ngFor="let car of cars">
                 <td>{{car.id}}</td>
                 <td>{{car.name}}</td>
                 <td>{{car.manufacturer}}</td>
@@ -24,7 +24,6 @@
                     <button class="btn btn-success me-1" (click)="updateCar(car)">Alterar</button>
                     <button class="btn btn-danger" (click)="removeCar(car)">Remover</button>
                 </td>
-
             </tr>
         </tbody>
     </table>
